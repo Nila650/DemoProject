@@ -19,11 +19,11 @@ public class AdminUsersTest extends Base {
 		String password1 = "navamika12";*/
 		String username = ExcelUtility.readStringData(1, 0, "adminuser");
 		String password = ExcelUtility.readStringData(1, 1, "adminuser");
-	//	String username1 = ExcelUtility.readStringDat(1, 2, "adminuser");
-	//	String password1 = ExcelUtility.readStringData(1, 3, "adminuser");
-		FakerUtility fakerutility = new FakerUtility();
+	String username1 = ExcelUtility.readStringData(1, 2, "adminuser");
+	String password1 = ExcelUtility.readStringData(1, 3, "adminuser");
+		/*FakerUtility fakerutility = new FakerUtility();
 		String username1 = fakerutility.creatARandomFirstName();
-		String password1 = fakerutility.creatARandomFirstName();
+		String password1 = fakerutility.creatARandomFirstName();*/
 		LoginPage loginpage = new LoginPage(driver);//parameterized constrcuion need to create constructor in page class
 		
 		loginpage.enterUserName(username);
